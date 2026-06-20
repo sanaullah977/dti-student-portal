@@ -1,10 +1,12 @@
 import React from "react";
+import { AiOutlineRead, AiTwotoneSnippets } from "react-icons/ai";
 import { FaCalendarAlt, FaGraduationCap, FaIdCard } from "react-icons/fa";
 import { FcCalendar, FcConferenceCall, FcGraduationCap, FcOvertime, FcReading, FcSurvey, FcViewDetails, FcVoicePresentation } from "react-icons/fc";
 import { GoBook } from "react-icons/go";
 import { IoLibraryOutline } from "react-icons/io5";
 import { MdNotificationAdd, MdNotificationsActive } from "react-icons/md";
 import { RiBookShelfFill } from "react-icons/ri";
+import { SiAmazoncognito } from "react-icons/si";
 import { VscFeedback } from "react-icons/vsc";
 import { Link } from "react-router";
 
@@ -15,7 +17,7 @@ const Card = () => {
       <Link to={"admit-card"}>
       <div className="card-body flex justify-center items-center flex-col bg-base-100 shadow-md rounded-lg p-6">
         <figure>
-        <FcSurvey size={70} />
+        <SiAmazoncognito size={70} />
         </figure>
         <h2 className="font-semibold text-2xl text-gray-600 text-center">
           Admit Card Clearance
@@ -23,6 +25,7 @@ const Card = () => {
       </div>
       </Link>
 
+     <Link to={"routine"}>
       <div className="card-body flex justify-center items-center flex-col bg-base-100 shadow-md rounded-lg p-6">
         <figure>
          <FcOvertime size={70}/>
@@ -31,6 +34,7 @@ const Card = () => {
           Routine
         </h2>
       </div>
+     </Link>
 
       <div className="card-body flex justify-center items-center flex-col bg-base-100 shadow-md rounded-lg p-6">
         <figure>
@@ -75,14 +79,16 @@ const Card = () => {
           Job Placement Cell
         </h2>
       </div>
+      <Link to={'student-application'}>
       <div className="card-body flex justify-center items-center flex-col bg-base-100 shadow-md rounded-lg p-6">
         <figure>
-          <FcReading size={70} />
+         <AiTwotoneSnippets size={70} />
         </figure>
         <h2 className="font-semibold text-2xl text-gray-600 text-center">
-          Admit Card Clearance
+          Student Application
         </h2>
       </div>
+      </Link>
       <Link to="result">
       <div className="card-body flex justify-center items-center flex-col bg-base-100 shadow-md rounded-lg p-6">
         <figure>
@@ -104,7 +110,7 @@ const Card = () => {
      <Link to="syllabus">
       <div className="card-body flex justify-center items-center flex-col bg-base-100 shadow-md rounded-lg p-6">
         <figure>
-          <GoBook size={70} />
+         <AiOutlineRead size={70}/>
         </figure>
         <h2 className="font-semibold text-2xl text-gray-600 text-center">
          Syllabus
