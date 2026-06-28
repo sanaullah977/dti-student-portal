@@ -17,12 +17,12 @@ import Readmission from "./Components/SideBar/Manu/Readmission";
 import IndustrialDocuments from "./Components/SideBar/Manu/IndustrialDocuments";
 import AATCW from "./Components/SideBar/Manu/AATCW";
 import AdmissionCancel from "./Components/SideBar/Manu/AdmissionCancel";
-import Manu_8 from "./Components/SideBar/Manu/Manu_8";
-import Manu_9 from "./Components/SideBar/Manu/Manu_9";
-import Manu_10 from "./Components/SideBar/Manu/Manu_10";
-import Manu_11 from "./Components/SideBar/Manu/Manu_11";
-import Manu_12 from "./Components/SideBar/Manu/Manu_12";
-import Manu_13 from "./Components/SideBar/Manu/Manu_13";
+import StudentExchange from "./Components/SideBar/Manu/StudentExchange";
+import IdCardReissue from "./Components/SideBar/Manu/IdCardReissue";
+import AdmitCardReissue from "./Components/SideBar/Manu/AdmitCardReissue";
+import MarksheetVerification from "./Components/SideBar/Manu/MarksheetVerification";
+import MarksheetCorrection from "./Components/SideBar/Manu/MarksheetCorrection";
+import SSCMarksheetCopy from "./Components/SideBar/Manu/SSCMarksheetCopy";
 import SSCMarksheet from "./Components/SideBar/Manu/SSCMarksheet";
 
 export const router = createBrowserRouter([
@@ -94,27 +94,27 @@ export const router = createBrowserRouter([
       },
       {
         path: "student-exchange",
-        Component: Manu_8,
+        Component: StudentExchange,
       },
       {
         path: "id-card-reissue",
-        Component: Manu_9,
+        Component: IdCardReissue,
       },
       {
         path: "admit-card-reissue",
-        Component: Manu_10,
+        Component: AdmitCardReissue,
       },
       {
         path: "marksheet-verification",
-        Component: Manu_11,
+        Component:MarksheetVerification,
       },
       {
         path: "marksheet-correction",
-        Component: Manu_12,
+        Component: MarksheetCorrection,
       },
       {
         path: "ssc-marksheet-copy",
-        Component: Manu_13,
+        Component: SSCMarksheetCopy,
       },
       {
         path: "ssc-marksheet",
